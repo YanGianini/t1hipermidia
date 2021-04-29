@@ -7,7 +7,10 @@
     <title>noticias</title>
 </head>
 <body>
-    <h2>noticia</h2>
-    noticias
+    <a href="{{ url_for('index') }}">home</a>
+    <h1>noticia</h2>
+    <h2>{{ noticia.get_titulo() }}</h2>
+    
+    <p>{{ noticia.get_texto() }}</p>
 </body>
-</html>l
+</html>

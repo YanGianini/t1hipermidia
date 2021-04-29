@@ -13,6 +13,8 @@ def index():
     return render_template("index.html", lista_estados=lista_estados, lista_noticias=lista_noticias)
 
 
-@app.route("/noticias")
-def videos():
-    return render_template("noticia.html")
+@app.route("/noticias/<id>")
+def noticias(id):
+    noticias = NoticiaDAO()
+    noticia = noticias.filtrar_id(id)
+    return render_template("noticia.html", noticia=noticia)

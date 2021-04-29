@@ -13,9 +13,9 @@
     <div>
         <h3>Estados</h3>
         {% for estado in lista_estados %}
-        <div>
+        
             <a href="">{{ estado.get_nome() }}</a>
-        </div>
+        
         {% endfor %}
     </div>
 
@@ -23,7 +23,9 @@
         <h3>Noticias</h3>
     
         {% for noticia in lista_noticias %}
-            <a href="">{{ noticia.get_titulo() }}</a>
+        <div>
+            <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>
+        </div>
         {% endfor %}
     
     </div>

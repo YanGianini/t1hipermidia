@@ -8,3 +8,7 @@ class NoticiaDAO():
     def lista_noticias(self):
         return self.noticia_list
 
+    def filtrar_id(self, id):
+        for noticia in noticia_list:
+            if str(noticia.id) == id:
+                return noticia

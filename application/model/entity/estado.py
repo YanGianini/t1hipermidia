@@ -2,7 +2,7 @@ class Estado():
     def __init__(self, nome, sigla, url_img):
         self.nome = nome
         self.sigla = sigla
-        self.url_img
+        self.url_img = url_img
         self.noticias = []
     
     def get_nome(self):

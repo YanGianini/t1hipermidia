@@ -9,5 +9,12 @@
 <body>
     <h2>index</h2>
     index
+
+    {% for estado in lista_estados %}
+    <div>
+        <h2>{{ estado.get_nome() }}</h2>
+
+    </div>
+    {% endfor %}
 </body>
 </html>

@@ -10,11 +10,23 @@
     <h2>index</h2>
     index
 
-    {% for estado in lista_estados %}
     <div>
-        <h2>{{ estado.get_nome() }}</h2>
-
+        <h3>Estados</h3>
+        {% for estado in lista_estados %}
+        <div>
+            <a href="">{{ estado.get_nome() }}</a>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+
+    <div>
+        <h3>Noticias</h3>
+    
+        {% for noticia in lista_noticias %}
+            <a href="">{{ noticia.get_titulo() }}</a>
+        {% endfor %}
+    
+    </div>
+
 </body>
 </html>

@@ -5,6 +5,6 @@ class NoticiaDAO():
     def __init__(self):
         self.noticia_list = noticia_list
 
-    def lista_noticia(self):
+    def lista_noticias(self):
         return self.noticia_list
 

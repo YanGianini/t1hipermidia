@@ -7,7 +7,10 @@ from application.model.dao.noticiaDAO import NoticiaDAO
 def index():
     estadoDAO = EstadoDAO()
     lista_estados = estadoDAO.lista_estados()
-    return render_template("index.html", lista_estados=lista_estados)
+    noticiaDao = NoticiaDAO()
+    lista_noticias = noticiaDao.lista_noticias()
+
+    return render_template("index.html", lista_estados=lista_estados, lista_noticias=lista_noticias)
 
 
 @app.route("/noticias")

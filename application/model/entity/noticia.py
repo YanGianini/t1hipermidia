@@ -6,7 +6,6 @@ class Noticia():
         self.titulo = titulo
         self.texto = texto
         self.data = date
-        self.estado = estado 
 
 
     def get_id(self):

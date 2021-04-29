@@ -3,7 +3,7 @@ class Estado():
         self.nome = nome
         self.sigla = sigla
         self.url_img
-
+        self.noticias = []
     
     def get_nome(self):
         return self.nome
@@ -22,7 +22,13 @@ class Estado():
     def get_url_img(self):
         return self.url_img
 
-
     def set_url_img(self, url):
         self.url_img = url
-        
+
+
+    def get_noticias(self):
+        return self.noticias
+
+    def set_noticias(self, noticia):
+        self.noticias.append(noticia)
+    

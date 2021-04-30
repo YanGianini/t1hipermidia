@@ -13,20 +13,19 @@
     <div>
         <h3>Estados</h3>
         {% for estado in lista_estados %}
-        
-            <a href="">{{ estado.get_nome() }}</a>
+            <h2>{{ estado.get_nome() }} - {{ estado.get_sigla() }}</h2>
+            
+            {% for noticia in estado.get_noticias() %}
+            <div>
+                <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>
+            </div>
+            {% endfor %}
         
         {% endfor %}
     </div>
 
     <div>
-        <h3>Noticias</h3>
-    
-        {% for noticia in lista_noticias %}
-        <div>
-            <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>
-        </div>
-        {% endfor %}
+        
     
     </div>
 

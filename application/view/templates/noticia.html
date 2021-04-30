@@ -9,6 +9,7 @@
 <body>
     <a href="{{ url_for('index') }}">home</a>
     <h1>noticia</h2>
+        <img src="{{url_for('static', filename='img/'+ noticia.get_url_img() )}}" alt="" width="500" height="250">
     <h2>{{ noticia.get_titulo() }}</h2>
     
     <p>{{ noticia.get_texto() }}</p>

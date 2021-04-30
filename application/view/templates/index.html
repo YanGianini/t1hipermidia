@@ -13,8 +13,9 @@
     <div>
         <h3>Estados</h3>
         {% for estado in lista_estados %}
+        <img src="{{url_for('static', filename='img/'+ estado.get_url_img() )}}" alt="" width="100" height="50">
             <h2>{{ estado.get_nome() }} - {{ estado.get_sigla() }}</h2>
-            
+
             {% for noticia in estado.get_noticias() %}
             <div>
                 <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>

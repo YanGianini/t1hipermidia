@@ -32,11 +32,27 @@ noticia3 = Noticia(3, "url 3", "sp3.jpg", titulo3, texto3, "12/03/2021")
 titulo4 = "Butantan localiza variante suíça do novo coronavírus em SP e confirma outro caso da sul-africana"
 texto4 = "Variante suíça, conhecida pela sigla B.1.1.318, já tinha sido reportada em análise de Santa Catarina. Já a sul-africana, antes verificada em Sorocaba, agora foi achada em amostra coletada na Baixada Santista. Pesquisadores do Instituto Butantan identificaram, pela primeira vez no estado de São Paulo, a presença da variante suíça do novo coronavírus, a B.1.1.318. Além disso, a rede de monitoramento identificou um novo caso da variante sul-africana, a B.1.351."
 
-noticia4 = Noticia(4, "url 4", "url img 4", titulo4, texto4, "26/04/2021")
-noticia5 = Noticia(5, "url 5", "url img 5", "titulo 5", "texto 5", "26/04/2021")
-noticia6 = Noticia(6, "url 6", "url img 6", "titulo 6", "texto 6", "12/03/2021")
-noticia7 = Noticia(7, "url 7", "url img 7", "titulo 7", "texto 7", "12/03/2021")
-noticia8 = Noticia(8, "url 8", "url img 8", "titulo 8", "texto 8", "12/03/2021")
+noticia4 = Noticia(4, "url 4", "virus4.jpg", titulo4, texto4, "26/04/2021")
+
+titulo5 = "COVID-19: Minas Gerais recebe o 15° lote de vacinas com 589.800 doses"
+texto5 = "Minas Gerais recebeu, na noite desta quinta-feira (29/4), o 15º lote de vacinas contra a COVID-19, enviado pelo Ministério da Saúde. As 589.800 doses serão encaminhadas para a Rede de Frios, no Bairro Gameleira, na Região Oeste de Belo Horizonte."
+
+noticia5 = Noticia(5, "url 5", "minas5.jpeg", titulo5, texto5, "26/04/2021")
+
+titulo6 = "Minas Gerais ultrapassa 34 mil mortes por Covid-19"
+texto6 = "Minas Gerais chegou, neste sábado (1º), a 34.036 mortes por Covid-19 desde o início da pandemia. De acordo com a Secretaria de Estado de Saúde (SES), 337 óbitos foram registrados nas últimas 24 horas. Os dados da SES ainda apontam que 76.236 pacientes estão em acompanhamento. Outros 1.256.330 já se recuperaram da doença. Ou seja, são pessoas que atendem a três pré-requisitos: estão há 72 horas assintomáticas; receberam alta hospitalar e/ou cumpriram isolamento domiciliar de dez dias; e estão sem intercorrências.. Já o número de casos atingiu 1.366.602. Foram 7.465 confirmações a mais em relação à véspera."
+
+noticia6 = Noticia(6, "url 6", "minas6.jpg", titulo6, texto6, "12/03/2021")
+
+titulo7 = "ES não tem mais cidades em risco extremo para a Covid-19"
+texto7 = "O governador do Espírito Santo, Renato Casagrande (PSB), divulgou nesta sexta-feira (30) o novo mapa de risco da Covid-19. A nova classificação começa a valer na próxima segunda (3) e não tem cidades em risco extremo. No mapa atual, há cinco cidades na classificação máxima. O novo mapa também tem 56 municípios em risco alto e 22 em risco moderado. Não há cidades em risco baixo."
+
+noticia7 = Noticia(7, "url 7", "mapa7.jpg", titulo7, texto7, "12/03/2021")
+
+titulo8 = "Espírito Santo registra mais 12 mortes e 1.181 novos casos de covid-19 em 24 horas"
+texto8 = "Em 24 horas, o Espírito Santo registrou mais 12 mortes em decorrência do novo coronavírus, segundo informações do Painel Covid-19, da Secretaria de Estado da Saúde (Sesa), atualizadas na tarde deste sábado (01). Com isso, o total de óbitos causados pela doença no Estado chegou a 9.536. Além disso, entre sexta-feira (30) e sábado (1), 1.181 novos casos de covid-19 foram contabilizados, elevando o total de infectados, desde o início da pandemia, para 437.862 no Espírito Santo. O Painel Covid-19 aponta, ainda, que 410.153 pessoas já conseguiram vencer a doença no Estado."
+
+noticia8 = Noticia(8, "url 8", "es8.jpg", titulo8, texto8, "12/03/2021")
 
 noticia_list = [noticia1, noticia2, noticia3, noticia4, noticia5, noticia6, noticia7, noticia8]
 

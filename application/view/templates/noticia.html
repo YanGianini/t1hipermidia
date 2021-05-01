@@ -2,13 +2,14 @@
 {% block conteudo %}
 
 <body>
-    <a href="{{ url_for('index') }}">home</a>
-    
-    <h1>noticia</h2>
-        <img src="{{url_for('static', filename='img/'+ noticia.get_url_img() )}}" alt="" width="500" height="250">
-    <h2>{{ noticia.get_titulo() }}</h2>
-    
-    <p>{{ noticia.get_texto() }}</p>
+    <div id="noticia">
+        <h1>{{ noticia.get_titulo() }}</h1>
+        <div id="noticia_conteudo">
+            <div id="img_noticia"><img id="noticia" src="{{url_for('static', filename='img/'+ noticia.get_url_img() )}}" alt=""></div>
+        </div>  
+            
+        <p>{{ noticia.get_texto() }}</p>
+    </div>
 </body>
 
 {% endblock %}

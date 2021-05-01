@@ -14,13 +14,14 @@
     </ul>
     {% block conteudo %}
     <div id="inicio">
-        <h2>Covid Journal</h2>
+        <h1>Covid Journal</h1>
     </div>
         <section id="noticias">
         <div id="noticia">
-            <h3>Estados</h3>
+            <h1>Estados</h3>
             {% for estado in lista_estados %}
             <div id="estados">
+                <hr>
                 <img src="{{url_for('static', filename='img/'+ estado.get_url_img() )}}" alt="" id="band">
                 <h2>{{ estado.get_nome() }} - {{ estado.get_sigla() }}</h2>
             </div>

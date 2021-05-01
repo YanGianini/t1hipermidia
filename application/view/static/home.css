@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(92, 9, 9);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a#menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  a#menu:hover {
+    background-color: #111;
+  }
+  
+
+
+div#inicio {
+    box-sizing: border-box;
+    background-color: white;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+div#noticia {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow: ;
+}
+
+div#estados {
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+div#titulos {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+img#band {
+    width: 200px;
+    height: 100px;
+}
+
+a {
+    color: rgb(161, 40, 40);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 20pt;
+    color: rgb(99, 19, 19);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: rgb(121, 19, 19);
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    box-sizing: border-box;
+    margin: 5%;
+}
+

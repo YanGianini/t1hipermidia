@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Covid Journal</title>
 </head>
 <body>
-    <h2>index</h2>
-    index
-
-    <div>
-        <h3>Estados</h3>
-        {% for estado in lista_estados %}
-        <img src="{{url_for('static', filename='img/'+ estado.get_url_img() )}}" alt="" width="100" height="50">
-            <h2>{{ estado.get_nome() }} - {{ estado.get_sigla() }}</h2>
-
-            {% for noticia in estado.get_noticias() %}
-            <div>
-                <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>
+    <ul>
+        <li><a id="menu" href="{{ url_for('index') }}">inicio</a></li>
+        <li><a id="menu" href="#noticia">News</a></li>
+    </ul>
+    {% block conteudo %}
+    <div id="inicio">
+        <h2>Covid Journal</h2>
+    </div>
+        <section id="noticias">
+        <div id="noticia">
+            <h3>Estados</h3>
+            {% for estado in lista_estados %}
+            <div id="estados">
+                <img src="{{url_for('static', filename='img/'+ estado.get_url_img() )}}" alt="" id="band">
+                <h2>{{ estado.get_nome() }} - {{ estado.get_sigla() }}</h2>
             </div>
+            {% for noticia in estado.get_noticias() %}
+            <div id="titulos">
+                <a href="{{ url_for('noticias', id=noticia.get_id()) }}">{{ noticia.get_titulo() }}</a>
+            </div>    
             {% endfor %}
-        
-        {% endfor %}
-    </div>
-
-    <div>
-        
-    
-    </div>
-
+            
+            {% endfor %}
+        </div>
+        </section>
+    {% endblock %}
+<footer>
+    desenvolvido por Yan Gianini e direitos reservados principalmente ao G1 
+</footer>
 </body>
 </html>

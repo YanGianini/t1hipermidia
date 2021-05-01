@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>noticias</title>
-</head>
+{% extends "index.html" %}
+{% block conteudo %}
+
 <body>
     <a href="{{ url_for('index') }}">home</a>
+    
     <h1>noticia</h2>
         <img src="{{url_for('static', filename='img/'+ noticia.get_url_img() )}}" alt="" width="500" height="250">
     <h2>{{ noticia.get_titulo() }}</h2>
     
     <p>{{ noticia.get_texto() }}</p>
 </body>
-</html>
+
+{% endblock %}
